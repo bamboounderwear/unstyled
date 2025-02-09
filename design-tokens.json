@@ -3,8 +3,8 @@
     "primary": "#2563eb",
     "secondary": "#4b5563",
     "accent": "#8b5cf6",
-    "background": "#00000",
-    "text": "#ffffff",
+    "background": "#ffffff",
+    "text": "#1f2937",
     "border": "#e5e7eb"
   },
   "spacing": {

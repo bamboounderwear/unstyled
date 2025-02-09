@@ -1,52 +1,56 @@
 /* Single Column Text Block */
 .text-block {
     max-width: 65ch;
-    margin: 2rem auto;
-    padding: 1.5rem;
+    margin: var(--space-xl) auto;
+    padding: var(--space-lg);
 }
 
 .text-block__title {
-    font-size: 2rem;
+    font-size: var(--font-size-3xl);
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-md);
+    color: var(--color-text);
 }
 
 .text-block__content {
     line-height: 1.7;
+    color: var(--color-text);
 }
 
 .text-block__content p {
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-md);
 }
 
 /* Multi-Column Text Block */
 .text-columns {
-    padding: 2rem 0;
+    padding: var(--space-xl) 0;
 }
 
 .text-columns__title {
     text-align: center;
-    font-size: 2rem;
+    font-size: var(--font-size-3xl);
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: var(--space-xl);
+    color: var(--color-text);
 }
 
 .text-columns__grid {
     display: grid;
-    gap: 2rem;
+    gap: var(--space-xl);
 }
 
 .text-columns__content {
     line-height: 1.7;
+    color: var(--color-text);
 }
 
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint-md)) {
     .text-columns__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: var(--breakpoint-lg)) {
     .text-columns__grid {
         grid-template-columns: repeat(3, 1fr);
     }
