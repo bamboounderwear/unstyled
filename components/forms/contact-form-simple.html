@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Contact Form</title>
+    <link rel="stylesheet" href="../../styles/global.css">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+        }
+        
+        .contact-form__group {
+            margin-bottom: 1rem;
+        }
+        
+        .contact-form__label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-form__input,
+        .contact-form__textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.25rem;
+        }
+        
+        .contact-form__textarea {
+            min-height: 150px;
+        }
+        
+        .contact-form__button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="contact-form">
+            <div class="contact-form__group">
+                <label for="name" class="contact-form__label">Name</label>
+                <input type="text" id="name" class="contact-form__input" required>
+            </div>
+            
+            <div class="contact-form__group">
+                <label for="email" class="contact-form__label">Email</label>
+                <input type="email" id="email" class="contact-form__input" required>
+            </div>
+            
+            <div class="contact-form__group">
+                <label for="message" class="contact-form__label">Message</label>
+                <textarea id="message" class="contact-form__textarea" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn contact-form__button">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

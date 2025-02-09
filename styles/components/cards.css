@@ -1,0 +1,33 @@
+/* Basic Card */
+.card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card__content {
+    padding: 1.5rem;
+}
+
+.card__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card__text {
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.card__button {
+    display: inline-block;
+    width: auto;
+}

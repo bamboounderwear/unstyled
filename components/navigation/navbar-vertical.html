@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Navigation</title>
+    <link rel="stylesheet" href="../../styles/global.css">
+    <style>
+        .navbar-vertical {
+            width: 250px;
+            height: 100vh;
+            background-color: white;
+            border-right: 1px solid #e5e7eb;
+            padding: 1.5rem;
+        }
+        
+        .navbar-vertical__brand {
+            display: block;
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: inherit;
+            margin-bottom: 2rem;
+        }
+        
+        .navbar-vertical__list {
+            list-style: none;
+        }
+        
+        .navbar-vertical__item {
+            margin-bottom: 0.5rem;
+        }
+        
+        .navbar-vertical__link {
+            display: block;
+            padding: 0.5rem;
+            text-decoration: none;
+            color: inherit;
+            border-radius: 0.25rem;
+            transition: background-color 0.2s;
+        }
+        
+        .navbar-vertical__link:hover {
+            background-color: #f3f4f6;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar-vertical {
+                width: 100%;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid #e5e7eb;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar-vertical">
+        <a href="#" class="navbar-vertical__brand">Logo</a>
+        <ul class="navbar-vertical__list">
+            <li class="navbar-vertical__item">
+                <a href="#" class="navbar-vertical__link">Home</a>
+            </li>
+            <li class="navbar-vertical__item">
+                <a href="#" class="navbar-vertical__link">About</a>
+            </li>
+            <li class="navbar-vertical__item">
+                <a href="#" class="navbar-vertical__link">Services</a>
+            </li>
+            <li class="navbar-vertical__item">
+                <a href="#" class="navbar-vertical__link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

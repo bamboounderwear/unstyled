@@ -1,0 +1,53 @@
+/* Single Column Text Block */
+.text-block {
+    max-width: 65ch;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+.text-block__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.text-block__content {
+    line-height: 1.7;
+}
+
+.text-block__content p {
+    margin-bottom: 1rem;
+}
+
+/* Multi-Column Text Block */
+.text-columns {
+    padding: 2rem 0;
+}
+
+.text-columns__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.text-columns__grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.text-columns__content {
+    line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+    .text-columns__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .text-columns__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

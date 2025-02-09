@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <button class="btn btn--primary" onclick="document.getElementById('demo-modal').showModal()">Open Modal</button>
+
+        <dialog id="demo-modal" class="modal">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h2 class="modal__title">Modal Title</h2>
+                    <button class="modal__close" onclick="document.getElementById('demo-modal').close()">&times;</button>
+                </div>
+                <div class="modal__body">
+                    <p>This is a modal dialog. It can be used for important notices, confirmations, or forms.</p>
+                </div>
+                <div class="modal__footer">
+                    <button class="btn btn--outline" onclick="document.getElementById('demo-modal').close()">Cancel</button>
+                    <button class="btn btn--primary">Confirm</button>
+                </div>
+            </div>
+        </dialog>
+    </div>
+</body>
+</html>

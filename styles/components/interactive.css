@@ -1,0 +1,132 @@
+/* Modal */
+.modal {
+    padding: 0;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__content {
+    width: 100%;
+    max-width: 500px;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.modal__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal__close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.modal__body {
+    padding: 1rem;
+}
+
+.modal__footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Tabs */
+.tabs {
+    margin: 2rem 0;
+}
+
+.tabs__list {
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.tabs__tab {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: none;
+    font-weight: 500;
+    color: #4b5563;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+.tabs__tab--active {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+}
+
+.tabs__panels {
+    padding: 1.5rem 0;
+}
+
+.tabs__panel {
+    display: none;
+}
+
+.tabs__panel--active {
+    display: block;
+}
+
+/* Accordion */
+.accordion {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.accordion__item {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.accordion__item:last-child {
+    border-bottom: none;
+}
+
+.accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: white;
+}
+
+.accordion__header::-webkit-details-marker {
+    display: none;
+}
+
+.accordion__title {
+    font-weight: 500;
+}
+
+.accordion__icon {
+    font-size: 1.25rem;
+    transition: transform 0.2s;
+}
+
+.accordion__item[open] .accordion__icon {
+    transform: rotate(45deg);
+}
+
+.accordion__content {
+    padding: 1rem;
+    background-color: #f9fafb;
+}
