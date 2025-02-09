@@ -1,3 +1,6 @@
+/* Import tokens first */
+@import 'tokens.css';
+
 /* Import all component styles */
 @import 'components/navigation.css';
 @import 'components/footer.css';
