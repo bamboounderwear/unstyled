@@ -2,7 +2,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const templatesDir = path.join(__dirname, 'templates');
+// Define directories: root for templates, snippets remain in their folder, and build for output.
+const rootDir = __dirname;
 const snippetsDir = path.join(__dirname, 'snippets');
 const buildDir = path.join(__dirname, 'build');
 
@@ -11,9 +12,9 @@ if (!fs.existsSync(buildDir)) {
   fs.mkdirSync(buildDir);
 }
 
-// Function to process a template file and merge in snippets using the new syntax
+// Function to process a template and merge in snippets using the @@include syntax
 function processTemplate(content) {
-  // This regex matches @@include("filename.html") or @@include('filename.html')
+  // Regex matches: @@include("filename.html") or @@include('filename.html')
   const includeRegex = /@@include\(["']([^"']+)["']\)/g;
   return content.replace(includeRegex, (match, snippetFile) => {
     const snippetPath = path.join(snippetsDir, snippetFile);
@@ -26,11 +27,11 @@ function processTemplate(content) {
   });
 }
 
-// Read and process each HTML template
-fs.readdirSync(templatesDir).forEach((file) => {
-  if (path.extname(file) === '.html') {
-    const templatePath = path.join(templatesDir, file);
-    const content = fs.readFileSync(templatePath, 'utf8');
+// Scan the project root for HTML files (excluding directories)
+fs.readdirSync(rootDir).forEach((file) => {
+  const fullPath = path.join(rootDir, file);
+  if (path.extname(file) === '.html' && fs.statSync(fullPath).isFile()) {
+    const content = fs.readFileSync(fullPath, 'utf8');
     const processedContent = processTemplate(content);
     const outputPath = path.join(buildDir, file);
     fs.writeFileSync(outputPath, processedContent, 'utf8');
