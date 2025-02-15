@@ -1,0 +1,134 @@
+/* 
+  Utopia Boilerplate
+  Minimal & Unopinionated
+  1) Resets & Baseline
+  2) Custom Properties (Utopia scales)
+  3) Basic Layout & Grid
+*/
+
+/* 1) Simple Reset & Baseline 
+   ---------------------------------------------- */
+   *,
+   *::before,
+   *::after {
+     box-sizing: border-box;
+   }
+   html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote {
+     margin: 0;
+     padding: 0;
+   }
+   body {
+     font-family: 'Inter', sans-serif;
+     /* Mobile-first base = 18px (112.5% of 16px) */
+     font-size: 112.5%;
+     line-height: 1.5;
+     background-color: #fff;
+     color: #000;
+   }
+   
+   /* Increase base font-size to ~21px on screens >= 768px */
+   @media (min-width: 768px) {
+     :root {
+       font-size: 131.25%; /* ~21px */
+     }
+   }
+   
+   /* Set some minimal unopinionated defaults */
+   h1, h2, h3, h4, h5, h6 {
+     line-height: 1.2; /* slightly tighter for titles */
+     font-weight: 700;
+   }
+   p {
+     margin-block-end: 1em;
+     font-weight: 400;
+   }
+   ul, ol {
+     margin-block-end: 1em;
+     padding-inline-start: 1em;
+   }
+   img, video {
+     max-width: 100%;
+     height: auto;
+   }
+   blockquote {
+     border-left: 4px solid #ccc;
+     padding-left: 1em;
+   }
+   
+   /* A utility class to visualize sections/blocks */
+   .u-block {
+     background-color: #f4f4f4;
+     padding: var(--space-s, 1rem);
+   }
+   
+   /* 2) Custom Properties from Utopia 
+      ---------------------------------------------- */
+   
+   /* Typography Scale (clamp) 
+      From: https://utopia.fyi/type/calculator?c=320,18,1.2,1440,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 
+   */
+   :root {
+     --step--2: clamp(0.7035rem, 0.8035rem + -0.1111vw, 0.7813rem);
+     --step--1: clamp(0.9375rem, 0.9374rem + 0.0003vw, 0.9377rem);
+     --step-0: clamp(1.125rem, 1.0893rem + 0.1786vw, 1.25rem);
+     --step-1: clamp(1.35rem, 1.2596rem + 0.4518vw, 1.6663rem);
+     --step-2: clamp(1.62rem, 1.4483rem + 0.8587vw, 2.2211rem);
+     --step-3: clamp(1.944rem, 1.6535rem + 1.4525vw, 2.9607rem);
+     --step-4: clamp(2.3328rem, 1.8717rem + 2.3055vw, 3.9467rem);
+     --step-5: clamp(2.7994rem, 2.0961rem + 3.5165vw, 5.2609rem);
+   }
+   
+   /* Spacing Scale (clamp)
+      From: https://utopia.fyi/space/calculator?c=320,18,1.2,1440,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12
+   */
+   :root {
+     --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+     --space-2xs: clamp(0.5625rem, 0.5446rem + 0.0893vw, 0.625rem);
+     --space-xs: clamp(0.875rem, 0.8571rem + 0.0893vw, 0.9375rem);
+     --space-s: clamp(1.125rem, 1.0893rem + 0.1786vw, 1.25rem);
+     --space-m: clamp(1.6875rem, 1.6339rem + 0.2679vw, 1.875rem);
+     --space-l: clamp(2.25rem, 2.1786rem + 0.3571vw, 2.5rem);
+     --space-xl: clamp(3.375rem, 3.2679rem + 0.5357vw, 3.75rem);
+     --space-2xl: clamp(4.5rem, 4.3571rem + 0.7143vw, 5rem);
+     --space-3xl: clamp(6.75rem, 6.5357rem + 1.0714vw, 7.5rem);
+   
+     /* One-up pairs */
+     --space-3xs-2xs: clamp(0.3125rem, 0.2232rem + 0.4464vw, 0.625rem);
+     --space-2xs-xs: clamp(0.5625rem, 0.4554rem + 0.5357vw, 0.9375rem);
+     --space-xs-s: clamp(0.875rem, 0.7679rem + 0.5357vw, 1.25rem);
+     --space-s-m: clamp(1.125rem, 0.9107rem + 1.0714vw, 1.875rem);
+     --space-m-l: clamp(1.6875rem, 1.4554rem + 1.1607vw, 2.5rem);
+     --space-l-xl: clamp(2.25rem, 1.8214rem + 2.1429vw, 3.75rem);
+     --space-xl-2xl: clamp(3.375rem, 2.9107rem + 2.3214vw, 5rem);
+     --space-2xl-3xl: clamp(4.5rem, 3.6429rem + 4.2857vw, 7.5rem);
+   
+     /* Custom pairs */
+     --space-s-l: clamp(1.125rem, 0.7321rem + 1.9643vw, 2.5rem);
+   }
+   
+   /* Grid System
+      From: https://utopia.fyi/grid/calculator?c=320,18,1.2,1440,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12
+   */
+   :root {
+     --grid-max-width: 77.50rem;
+     --grid-gutter: var(--space-s-l, 1rem);
+     --grid-columns: 12;
+   }
+   
+   /* 3) Basic Layout & Grid Classes 
+      ---------------------------------------------- */
+   
+   /* Container centers content with maximum width */
+   .u-container {
+     max-width: var(--grid-max-width);
+     padding-inline: var(--grid-gutter);
+     margin-inline: auto;
+   }
+   
+   /* Simple responsive grid that auto-stacks on small viewports */
+   .u-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     gap: var(--grid-gutter);
+   }
+   

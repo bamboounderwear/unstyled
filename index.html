@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-  </head>
-  <body>
-    @@include("title.html")
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0" 
+  />
+  <title>Utopia Boilerplate</title>
+  
+  <!-- Google Fonts: Inter -->
+  <link 
+    rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+  >
+  
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Example Container -->
+  <header class="u-block">
+    <div class="u-container">
+      <h1>Utopia Boilerplate</h1>
+      <p>This is a demo header block using Inter and fluid typography.</p>
+    </div>
+  </header>
+
+  <!-- Example Content Area -->
+  <main class="u-container">
+    <section class="u-block">
+      <h2>Section Title</h2>
+      <p>
+        This section demonstrates fluid spacing and typography. 
+        Resize your browser to see the font-size and line-height adapt.
+      </p>
+    </section>
+
+    <!-- Example Grid -->
+    <section class="u-block">
+      <h2>Responsive Grid Example</h2>
+      <div class="u-grid">
+        <div class="u-block">Grid Item 1</div>
+        <div class="u-block">Grid Item 2</div>
+        <div class="u-block">Grid Item 3</div>
+        <div class="u-block">Grid Item 4</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
