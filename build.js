@@ -11,10 +11,10 @@ if (!fs.existsSync(buildDir)) {
   fs.mkdirSync(buildDir);
 }
 
-// Function to process a template file and merge in snippets
+// Function to process a template file and merge in snippets using the new syntax
 function processTemplate(content) {
-  // This regex matches <!-- include: filename.html -->
-  const includeRegex = /<!--\s*include:\s*(\S+)\s*-->/g;
+  // This regex matches @@include("filename.html") or @@include('filename.html')
+  const includeRegex = /@@include\(["']([^"']+)["']\)/g;
   return content.replace(includeRegex, (match, snippetFile) => {
     const snippetPath = path.join(snippetsDir, snippetFile);
     if (fs.existsSync(snippetPath)) {
