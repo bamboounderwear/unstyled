@@ -36,12 +36,6 @@
   --grid-max-width: 77.50rem;
   --grid-gutter: var(--space-s-l, clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem));
   --grid-columns: 12;
-
-  /* Colors - keeping it minimal */
-  --color-text: #2c3338;
-  --color-background: #ffffff;
-  --color-border: #e5e7eb;
-  --color-accent: #4f46e5;
 }
 
 /* Reset */
@@ -161,7 +155,8 @@ a {
 }
 
 .hero__content {
-  max-width: 65ch;
+  /* Using a fluid width approach instead of fixed ch units */
+  width: min(100%, clamp(45rem, 80vw, 75rem));
   margin: 0 auto;
 }
 
@@ -169,12 +164,18 @@ a {
   font-size: var(--step-5);
   line-height: 1.1;
   margin-bottom: var(--space-m);
+  /* Slightly wider container for the title */
+  width: min(100%, clamp(35rem, 90%, 60rem));
+  margin-inline: auto;
 }
 
 .hero__subtitle {
   font-size: var(--step-1);
   color: #666;
   margin-bottom: var(--space-l);
+  /* Maintain better reading length for the subtitle */
+  width: min(100%, clamp(20rem, 90%, 45rem));
+  margin-inline: auto;
 }
 
 .hero__cta {
