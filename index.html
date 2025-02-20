@@ -1,215 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Minimal Classless CSS Framework Preview</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Minimal Classless CSS Framework</h1>
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
     <nav>
-      <ul>
-        <li><a href="#typography">Typography</a></li>
-        <li><a href="#lists">Lists</a></li>
-        <li><a href="#tables">Tables</a></li>
-        <li><a href="#forms">Forms</a></li>
-        <li><a href="#media">Media</a></li>
-        <li><a href="#misc">Miscellaneous</a></li>
-      </ul>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">Other page</a>
     </nav>
-  </header>
+    <main>
+      <h1>Grid System Example</h1>
+      
+      <!-- Two equal columns -->
+      <div class="row">
+        <div class="col-6" style="background: #333; padding: var(--space-4);">
+          Column 1
+        </div>
+        <div class="col-6" style="background: #444; padding: var(--space-4);">
+          Column 2
+        </div>
+      </div>
 
-  <main>
-    <!-- Typography Section -->
-    <section id="typography">
-      <h2>Typography</h2>
-      <p>
-        This is a sample paragraph with some <strong>strong text</strong> and <em>emphasized text</em>.
-        Here's an inline <a href="#">link</a> for reference.
-      </p>
-      <h3>Headings</h3>
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
-      <blockquote>
-        <p>This is a blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </blockquote>
-      <pre><code>
-// Sample code block
-function helloWorld() {
-  console.log("Hello, world!");
-}
-      </code></pre>
-    </section>
+      <!-- Three columns -->
+      <div class="row">
+        <div class="col-4" style="background: #333; padding: var(--space-4);">
+          Column 1
+        </div>
+        <div class="col-4" style="background: #444; padding: var(--space-4);">
+          Column 2
+        </div>
+        <div class="col-4" style="background: #555; padding: var(--space-4);">
+          Column 3
+        </div>
+      </div>
 
-    <!-- Lists Section -->
-    <section id="lists">
-      <h2>Lists</h2>
-      <h3>Unordered List</h3>
-      <ul>
-        <li>List item one</li>
-        <li>List item two</li>
-        <li>List item three</li>
-      </ul>
-      <h3>Ordered List</h3>
-      <ol>
-        <li>First item</li>
-        <li>Second item</li>
-        <li>Third item</li>
-      </ol>
-      <h3>Description List</h3>
-      <dl>
-        <dt>Term 1</dt>
-        <dd>Description for term 1.</dd>
-        <dt>Term 2</dt>
-        <dd>Description for term 2.</dd>
-      </dl>
-    </section>
-
-    <!-- Tables Section -->
-    <section id="tables">
-      <h2>Tables</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-            <th>Header 3</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-            <td>Data 3</td>
-          </tr>
-          <tr>
-            <td>Data 4</td>
-            <td>Data 5</td>
-            <td>Data 6</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- Forms Section -->
-    <section id="forms">
-      <h2>Forms</h2>
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Personal Information</legend>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
-          
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password">
-        </fieldset>
-        
-        <fieldset>
-          <legend>Preferences</legend>
-          <label for="color">Favorite Color:</label>
-          <input type="color" id="color" name="color">
-          
-          <label for="date">Birth Date:</label>
-          <input type="date" id="date" name="date">
-          
-          <label for="range">Range:</label>
-          <input type="range" id="range" name="range">
-          
-          <label for="file">Upload File:</label>
-          <input type="file" id="file" name="file">
-        </fieldset>
-        
-        <fieldset>
-          <legend>Other Options</legend>
-          <label>
-            <input type="checkbox" name="subscribe" checked>
-            Subscribe to newsletter
-          </label>
-          <br>
-          <label>
-            <input type="radio" name="gender" value="male" checked>
-            Male
-          </label>
-          <label>
-            <input type="radio" name="gender" value="female">
-            Female
-          </label>
-          <br>
-          <label for="bio">Biography:</label>
-          <textarea id="bio" name="bio" rows="4"></textarea>
-          <br>
-          <label for="select">Select an option:</label>
-          <select id="select" name="select">
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-          </select>
-        </fieldset>
-        
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-
-    <!-- Media Section -->
-    <section id="media">
-      <h2>Media</h2>
-      <figure>
-        <img src="https://via.placeholder.com/400x200" alt="Placeholder Image">
-        <figcaption>Placeholder Image</figcaption>
-      </figure>
-      <p>Audio Example:</p>
-      <audio controls>
-        <source src="audio.ogg" type="audio/ogg">
-        <source src="audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-      <p>Video Example:</p>
-      <video width="320" height="240" controls>
-        <source src="movie.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-      </video>
-    </section>
-
-    <!-- Miscellaneous Elements -->
-    <section id="misc">
-      <h2>Miscellaneous</h2>
-      <details>
-        <summary>More Information</summary>
-        <p>This content is hidden until the user clicks "More Information".</p>
-      </details>
-      <p>Here is some <mark>highlighted text</mark> and an <abbr title="Abbreviation Example">abbr</abbr>.</p>
-      <p>Here is a <cite>Citation example</cite> and a <time datetime="2025-02-20">February 20, 2025</time> element.</p>
-    </section>
-
-    <!-- Article Example -->
-    <article>
-      <h2>Article Example</h2>
-      <p>This article section serves as an example of longer-form content. It might include multiple paragraphs and sub-sections.</p>
-      <section>
-        <h3>Article Section</h3>
-        <p>Detailed content for the article section goes here.</p>
-      </section>
-    </article>
-
-    <!-- Aside Example -->
-    <aside>
-      <h2>Sidebar</h2>
-      <p>This aside element can be used for additional content, such as related links or advertisements.</p>
-    </aside>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Minimal Classless CSS Framework</p>
-  </footer>
-</body>
+      <!-- Mixed columns -->
+      <div class="row">
+        <div class="col-8" style="background: #333; padding: var(--space-4);">
+          Main Content
+        </div>
+        <div class="col-4" style="background: #444; padding: var(--space-4);">
+          Sidebar
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
