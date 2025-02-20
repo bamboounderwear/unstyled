@@ -42,6 +42,11 @@ Universal
     /* Grid */
     --grid-columns: 12;
     --grid-gap: var(--space-4);
+  
+    /* Container widths */
+    --container-small: 640px;
+    --container: 1024px;
+    --container-large: 1280px;
   }
   
   html {
@@ -57,6 +62,32 @@ Universal
     color: var(--color-text);
     background-color: var(--color-background);
     padding: var(--space-4);
+  }
+  
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  Container System
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  
+  .container-small,
+  .container,
+  .container-large {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+  
+  .container-small {
+    max-width: var(--container-small);
+  }
+  
+  .container {
+    max-width: var(--container);
+  }
+  
+  .container-large {
+    max-width: var(--container-large);
   }
   
   /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -126,8 +157,7 @@ Universal
   }
   
   main {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
   }
   
   /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *

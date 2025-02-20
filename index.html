@@ -16,38 +16,44 @@
       <a href="/page2.html">Other page</a>
     </nav>
     <main>
-      <h1>Grid System Example</h1>
-      
-      <!-- Two equal columns -->
-      <div class="row">
-        <div class="col-6" style="background: #333; padding: var(--space-4);">
-          Column 1
-        </div>
-        <div class="col-6" style="background: #444; padding: var(--space-4);">
-          Column 2
-        </div>
-      </div>
-
-      <!-- Three columns -->
-      <div class="row">
-        <div class="col-4" style="background: #333; padding: var(--space-4);">
-          Column 1
-        </div>
-        <div class="col-4" style="background: #444; padding: var(--space-4);">
-          Column 2
-        </div>
-        <div class="col-4" style="background: #555; padding: var(--space-4);">
-          Column 3
+      <div class="container">
+        <h1>Grid System Example</h1>
+        
+        <!-- Two equal columns -->
+        <div class="row">
+          <div class="col-6" style="background: #333; padding: var(--space-4);">
+            Column 1
+          </div>
+          <div class="col-6" style="background: #444; padding: var(--space-4);">
+            Column 2
+          </div>
         </div>
       </div>
 
-      <!-- Mixed columns -->
-      <div class="row">
-        <div class="col-8" style="background: #333; padding: var(--space-4);">
-          Main Content
+      <div class="container-small">
+        <!-- Three columns -->
+        <div class="row">
+          <div class="col-4" style="background: #333; padding: var(--space-4);">
+            Column 1
+          </div>
+          <div class="col-4" style="background: #444; padding: var(--space-4);">
+            Column 2
+          </div>
+          <div class="col-4" style="background: #555; padding: var(--space-4);">
+            Column 3
+          </div>
         </div>
-        <div class="col-4" style="background: #444; padding: var(--space-4);">
-          Sidebar
+      </div>
+
+      <div class="container-large">
+        <!-- Mixed columns -->
+        <div class="row">
+          <div class="col-8" style="background: #333; padding: var(--space-4);">
+            Main Content
+          </div>
+          <div class="col-4" style="background: #444; padding: var(--space-4);">
+            Sidebar
+          </div>
         </div>
       </div>
     </main>
