@@ -1,3 +1,6 @@
 <div class="prose max-w-prose mx-auto">
+  {% if componentData.title %}
+    <h2>{{ componentData.title }}</h2>
+  {% endif %}
   {{ componentData.content | safe }}
 </div>

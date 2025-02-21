@@ -8,7 +8,21 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        gray: {
+          50: '#fafafa',
+          100: '#f4f4f4',
+          200: '#e4e4e4',
+          300: '#d4d4d4',
+          400: '#a3a3a3',
+          500: '#737373',
+          600: '#525252',
+          700: '#404040',
+          800: '#262626',
+          900: '#171717',
+        }
       },
       // Utopia fluid spacing scale
       spacing: {
@@ -27,10 +41,39 @@ module.exports = {
         'fluid-2xl': 'clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem)',
         'fluid-3xl': 'clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem)',
       },
+      borderRadius: {
+        none: '0',
+      },
       prose: {
         DEFAULT: {
           css: {
             maxWidth: '65ch',
+            color: '#404040',
+            p: {
+              marginTop: 'clamp(1rem, 2vw, 2rem)',
+              marginBottom: 'clamp(1rem, 2vw, 2rem)',
+            },
+            'h2, h3, h4': {
+              color: '#171717',
+              marginTop: 'clamp(2rem, 4vw, 4rem)',
+              marginBottom: 'clamp(1rem, 2vw, 2rem)',
+            },
+            ul: {
+              marginTop: 'clamp(1rem, 2vw, 2rem)',
+              marginBottom: 'clamp(1rem, 2vw, 2rem)',
+            },
+            li: {
+              marginTop: 'clamp(0.5rem, 1vw, 1rem)',
+              marginBottom: 'clamp(0.5rem, 1vw, 1rem)',
+            },
+            a: {
+              color: '#171717',
+              textDecoration: 'none',
+              borderBottom: '1px solid #737373',
+              '&:hover': {
+                borderColor: '#171717',
+              },
+            },
           },
         },
       },

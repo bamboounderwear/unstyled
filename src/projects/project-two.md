@@ -8,6 +8,7 @@ components:
       subtitle: An innovative platform
   - type: text-block
     data:
+      title: Project Overview
       content: |
         Project Two is an innovative platform that demonstrates my expertise in building
         scalable and modern web applications. This project showcases advanced features

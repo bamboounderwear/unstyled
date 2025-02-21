@@ -8,6 +8,7 @@ components:
       subtitle: A beautiful web application
   - type: text-block
     data:
+      title: Project Overview
       content: |
         This is a detailed description of Project One. It showcases my skills in web development
         and design, focusing on creating intuitive user experiences.

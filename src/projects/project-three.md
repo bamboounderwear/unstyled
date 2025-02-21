@@ -8,6 +8,7 @@ components:
       subtitle: A creative solution
   - type: text-block
     data:
+      title: Project Overview
       content: |
         Project Three represents a creative solution to complex challenges in web development.
         This project combines innovative design with powerful functionality to deliver

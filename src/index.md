@@ -6,10 +6,6 @@ components:
     data:
       title: Hi, I'm a Creative Developer
       subtitle: Building beautiful and functional web experiences
-  - type: text-block
-    data:
-      content: |
-        I specialize in creating modern web applications with a focus on user experience and performance.
   - type: project-grid
     data:
       projects:

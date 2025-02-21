@@ -8,6 +8,7 @@ components:
       subtitle: Thoughts on modern web development
   - type: text-block
     data:
+      title: Introduction
       content: |
         This is my first blog post about web development and design. I'll be sharing my thoughts
         and experiences in creating modern web applications.

@@ -8,6 +8,7 @@ components:
       subtitle: Thoughts and insights on web development
   - type: text-block
     data:
+      title: Welcome to My Blog
       content: |
         Welcome to my blog where I share my experiences and knowledge about web development,
         design, and technology.
