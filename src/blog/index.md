@@ -6,6 +6,7 @@ components:
     data:
       title: Blog
       subtitle: Thoughts and insights on web development
+      backgroundImage: /images/project3.jpg
   - type: text-block
     data:
       title: Welcome to My Blog

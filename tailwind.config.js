@@ -41,6 +41,9 @@ module.exports = {
         'fluid-2xl': 'clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem)',
         'fluid-3xl': 'clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem)',
       },
+      maxWidth: {
+        'container-wide': '90rem',
+      },
       borderRadius: {
         none: '0',
       },

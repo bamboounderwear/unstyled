@@ -1,0 +1,13 @@
+<div class="container-wide mx-auto px-fluid-3">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-fluid-3">
+    <div class="aspect-video">
+      <img src="{{ componentData.image1 }}" alt="{{ componentData.alt1 }}" class="w-full h-full object-cover rounded-lg">
+    </div>
+    <div class="aspect-video">
+      <img src="{{ componentData.image2 }}" alt="{{ componentData.alt2 }}" class="w-full h-full object-cover rounded-lg">
+    </div>
+  </div>
+  {% if componentData.caption %}
+    <p class="text-gray-600 text-center mt-fluid-2">{{ componentData.caption }}</p>
+  {% endif %}
+</div>

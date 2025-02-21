@@ -6,6 +6,7 @@ components:
     data:
       title: Project Two
       subtitle: An innovative platform
+      backgroundImage: /images/project2.jpg
   - type: text-block
     data:
       title: Project Overview

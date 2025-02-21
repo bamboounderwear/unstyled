@@ -6,6 +6,7 @@ components:
     data:
       title: Project Three
       subtitle: A creative solution
+      backgroundImage: /images/project3.jpg
   - type: text-block
     data:
       title: Project Overview

@@ -1,0 +1,26 @@
+<nav class="container mx-auto px-fluid-3 py-fluid-2">
+  <div class="flex items-center justify-between">
+    <a href="/" class="flex items-center">
+      <img src="/images/logo.png" alt="Portfolio Logo" class="h-8 w-auto">
+    </a>
+    
+    <button id="menuButton" class="lg:hidden flex items-center gap-1 text-gray-900 hover:text-gray-600 transition-colors duration-300" aria-label="Toggle menu">
+      <span class="menu-text">menu</span>
+      <span class="menu-icon text-xl font-medium">+</span>
+    </button>
+
+    <ul class="hidden lg:flex gap-fluid-3">
+      <li><a href="/" class="hover:text-gray-900">Home</a></li>
+      <li><a href="/projects" class="hover:text-gray-900">Projects</a></li>
+      <li><a href="/blog" class="hover:text-gray-900">Blog</a></li>
+    </ul>
+  </div>
+
+  <div id="mobileMenu" class="lg:hidden">
+    <ul class="hidden py-4 space-y-2">
+      <li><a href="/" class="block hover:text-gray-900">Home</a></li>
+      <li><a href="/projects" class="block hover:text-gray-900">Projects</a></li>
+      <li><a href="/blog" class="block hover:text-gray-900">Blog</a></li>
+    </ul>
+  </div>
+</nav>

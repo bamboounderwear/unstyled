@@ -6,6 +6,7 @@ components:
     data:
       title: Projects
       subtitle: A showcase of my work
+      backgroundImage: /images/project2.jpg
   - type: project-grid
     data:
       projects:

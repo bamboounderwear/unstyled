@@ -6,6 +6,7 @@ components:
     data:
       title: Hi, I'm a Creative Developer
       subtitle: Building beautiful and functional web experiences
+      backgroundImage: /images/project1.jpg
   - type: project-grid
     data:
       projects:
