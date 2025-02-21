@@ -1,0 +1,21 @@
+---
+layout: base
+title: Blog
+components:
+  - type: hero
+    data:
+      title: Blog
+      subtitle: Thoughts and insights on web development
+  - type: text-block
+    data:
+      content: |
+        Welcome to my blog where I share my experiences and knowledge about web development,
+        design, and technology.
+  - type: project-grid
+    data:
+      projects:
+        - title: My First Blog Post
+          description: Thoughts on modern web development
+          image: /images/project1.jpg
+          url: /blog/first-post
+---
