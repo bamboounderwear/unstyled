@@ -2,5 +2,5 @@
   {% if componentData.title %}
     <h2>{{ componentData.title }}</h2>
   {% endif %}
-  {{ componentData.content | safe }}
+  {{ componentData.content | markdown | safe }}
 </div>
