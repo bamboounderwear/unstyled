@@ -1,17 +1,17 @@
 {
-  "name": "portfolio-eleventy",
-  "version": "1.0.0",
-  "description": "Portfolio website with Eleventy and Tailwind",
+  "name": "brockmann-inspired",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "npx tailwindcss -i ./src/styles/tailwind.css -o ./_site/styles/main.css && eleventy --serve & npx tailwindcss -i ./src/styles/tailwind.css -o ./_site/styles/main.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./src/styles/tailwind.css -o ./_site/styles/main.css --minify"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@tailwindcss/typography": "^0.5.10",
-    "autoprefixer": "^10.4.16",
-    "markdown-it": "^13.0.2",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.5"
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35"
   }
 }

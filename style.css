@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-area {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+}
+
+/* Smooth transitions for mobile menu button */
+#mobile-menu-button div {
+  transition: all 0.3s ease;
+}

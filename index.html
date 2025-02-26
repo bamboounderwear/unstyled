@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brockmann Inspired</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body class="bg-white text-black font-helvetica">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white z-50 border-b border-gray-200">
+      <div class="px-8 py-6">
+        <div class="flex justify-between items-center">
+          <a href="#" class="text-xl font-bold uppercase tracking-wider">Brockmann</a>
+          <div class="hidden md:flex space-x-8">
+            <a href="#" class="hover:text-red-600 transition-colors uppercase text-sm tracking-wider">Work</a>
+            <a href="#" class="hover:text-red-600 transition-colors uppercase text-sm tracking-wider">About</a>
+            <a href="#" class="hover:text-red-600 transition-colors uppercase text-sm tracking-wider">Grid</a>
+            <a href="#" class="hover:text-red-600 transition-colors uppercase text-sm tracking-wider">Contact</a>
+          </div>
+          <button id="mobile-menu-button" class="md:hidden">
+            <div class="w-6 h-0.5 bg-black mb-1.5"></div>
+            <div class="w-6 h-0.5 bg-black mb-1.5"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+          <a href="#" class="block py-2 hover:text-red-600 transition-colors uppercase text-sm tracking-wider">Work</a>
+          <a href="#" class="block py-2 hover:text-red-600 transition-colors uppercase text-sm tracking-wider">About</a>
+          <a href="#" class="block py-2 hover:text-red-600 transition-colors uppercase text-sm tracking-wider">Grid</a>
+          <a href="#" class="block py-2 hover:text-red-600 transition-colors uppercase text-sm tracking-wider">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="min-h-screen p-8 pt-28">
+      <!-- Header Section -->
+      <header class="grid-area mb-16 mt-32">
+        <div class="col-span-12 md:col-span-8">
+          <h1 class="text-6xl font-bold uppercase tracking-tight">Design is Intelligence Made Visible</h1>
+        </div>
+      </header>
+
+      <!-- Main Content Grid -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12 md:col-span-4">
+          <div class="aspect-square bg-black"></div>
+        </div>
+        <div class="col-span-12 md:col-span-4">
+          <p class="text-xl leading-relaxed">
+            The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer can look for a solution appropriate to their personal style.
+          </p>
+        </div>
+        <div class="col-span-12 md:col-span-4">
+          <div class="aspect-square bg-red-600"></div>
+        </div>
+      </section>
+
+      <!-- Offset Section -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12 md:col-start-4 md:col-span-8 lg:col-start-6 lg:col-span-6">
+          <h2 class="text-5xl font-bold mb-8 uppercase">Order Through Design</h2>
+          <p class="text-xl leading-relaxed mb-12">
+            The grid system helps in achieving an orderly and harmonious solution to visual problems. It is a way of organizing space and content on a page that can be both functional and aesthetically pleasing.
+          </p>
+        </div>
+      </section>
+
+      <!-- Asymmetric Grid Section -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12 md:col-span-7">
+          <div class="aspect-video bg-gray-900"></div>
+        </div>
+        <div class="col-span-12 md:col-span-4 md:col-start-9">
+          <h3 class="text-2xl font-bold mb-6 uppercase">Visual Hierarchy</h3>
+          <p class="text-lg leading-relaxed">
+            Through the systematic arrangement of elements, we create meaningful relationships between content and space.
+          </p>
+        </div>
+      </section>
+
+      <!-- Split Content Section -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12 md:col-span-5">
+          <div class="sticky top-28">
+            <h3 class="text-3xl font-bold mb-6 uppercase">Swiss Design Principles</h3>
+            <p class="text-lg leading-relaxed">
+              Embracing clarity, precision, and objective presentation through mathematical grid systems.
+            </p>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-6 md:col-start-7 space-y-8">
+          <div class="aspect-square bg-red-600"></div>
+          <div class="aspect-square bg-black"></div>
+          <div class="aspect-square bg-gray-700"></div>
+        </div>
+      </section>
+
+      <!-- Typography Section with Offset -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12 md:col-start-5 md:col-span-12">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h4 class="text-xl font-bold mb-4 uppercase">Typography</h4>
+              <p class="text-gray-600">Clear hierarchical organization of type sizes and weights.</p>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-4 uppercase">Layout</h4>
+              <p class="text-gray-600">Mathematical grid systems for structured, harmonious compositions.</p>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-4 uppercase">Space</h4>
+              <p class="text-gray-600">Strategic use of white space to create visual breathing room.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Typography Section -->
+      <section class="grid-area">
+        <div class="col-span-12 md:col-span-6">
+          <h2 class="text-4xl font-bold mb-8">Typography</h2>
+          <p class="text-lg mb-4">
+            The grid system is a way of organizing space or content on a page. It can be used to achieve better layouts, manage proportions and create a hierarchy in designs.
+          </p>
+        </div>
+        <div class="col-span-12 md:col-span-6">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="aspect-square bg-gray-900"></div>
+            <div class="aspect-square bg-gray-700"></div>
+            <div class="aspect-square bg-gray-500"></div>
+            <div class="aspect-square bg-gray-300"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-black border-t border-gray-200">
+      <div class="px-8 py-16">
+        <div class="grid-area">
+          <div class="col-span-12 md:col-span-4">
+            <h3 class="text-2xl font-bold uppercase tracking-wider mb-6">Brockmann</h3>
+            <p class="text-gray-600">Inspired by the principles of Swiss Design and the work of Josef Müller-Brockmann.</p>
+          </div>
+          <div class="col-span-12 md:col-span-4">
+            <h4 class="uppercase text-sm tracking-wider mb-4">Navigation</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-600 hover:text-red-600 transition-colors">Work</a></li>
+              <li><a href="#" class="text-gray-600 hover:text-red-600 transition-colors">About</a></li>
+              <li><a href="#" class="text-gray-600 hover:text-red-600 transition-colors">Grid</a></li>
+              <li><a href="#" class="text-gray-600 hover:text-red-600 transition-colors">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-span-12 md:col-span-4">
+            <h4 class="uppercase text-sm tracking-wider mb-4">Contact</h4>
+            <address class="text-gray-600 not-italic">
+              Email: <a href="mailto:hello@brockmann.com" class="hover:text-red-600 transition-colors">hello@brockmann.com</a><br>
+              Phone: +1 (555) 123-4567<br>
+              Location: Zurich, Switzerland
+            </address>
+          </div>
+        </div>
+        <div class="mt-16 pt-8 border-t border-gray-200">
+          <p class="text-gray-600 text-sm">&copy; 2025 Brockmann. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
