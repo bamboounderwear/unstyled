@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head pageTitle="Ideas"}}
+  </head>
+  <body class="bg-white text-black font-helvetica">
+    {{> header activeIdeas=true}}
+
+    <main class="min-h-screen p-8 pt-28">
+      <!-- Header Section -->
+      <header class="grid-area mb-16 mt-32">
+        <div class="col-span-12 md:col-span-8">
+          <h1 class="text-6xl font-bold uppercase tracking-tight">Ideas & Insights</h1>
+          <p class="text-xl mt-6">Thoughts on design, typography, and the principles that guide our work.</p>
+        </div>
+      </header>
+
+      <!-- Filter Controls -->
+      <section class="grid-area mb-16">
+        <div class="col-span-12">
+          <div class="flex flex-wrap gap-4">
+            <button class="filter-btn active px-4 py-2 border border-black hover:bg-black hover:text-white transition-colors bg-black text-white" data-filter="all">All</button>
+            <button class="filter-btn px-4 py-2 border border-black hover:bg-black hover:text-white transition-colors" data-filter="design">Design Theory</button>
+            <button class="filter-btn px-4 py-2 border border-black hover:bg-black hover:text-white transition-colors" data-filter="typography">Typography</button>
+            <button class="filter-btn px-4 py-2 border border-black hover:bg-black hover:text-white transition-colors" data-filter="grid">Grid Systems</button>
+            <button class="filter-btn px-4 py-2 border border-black hover:bg-black hover:text-white transition-colors" data-filter="interviews">Interviews</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Article -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12">
+          <h2 class="text-4xl font-bold mb-12 uppercase">Featured</h2>
+        </div>
+        
+        <div class="col-span-12 md:col-span-8">
+          <a href="blog-post.html" class="block">
+            <img src="https://placehold.co/1200x675/000000/FFFFFF" alt="The Evolution of Swiss Design" class="w-full aspect-video object-cover mb-8">
+          </a>
+        </div>
+        
+        <div class="col-span-12 md:col-span-4">
+          <span class="text-red-600 uppercase text-sm tracking-wider">Design Theory</span>
+          <h3 class="text-3xl font-bold uppercase mb-4 mt-2">
+            <a href="blog-post.html" class="hover:text-red-600 transition-colors">The Evolution of Swiss Design</a>
+          </h3>
+          <p class="text-gray-600 mb-4">May 15, 2025 • 8 min read</p>
+          <p class="text-lg leading-relaxed mb-8">
+            From its origins in the 1950s to its influence on digital design today, Swiss Design continues to shape how we think about visual communication.
+          </p>
+          <a href="blog-post.html" class="inline-block bg-black text-white px-6 py-3 uppercase tracking-wider hover:bg-red-600 transition-colors">
+            Read Article
+          </a>
+        </div>
+      </section>
+
+      <!-- Recent Articles Grid -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12">
+          <h2 class="text-4xl font-bold mb-12 uppercase">Recent Articles</h2>
+        </div>
+        
+        <!-- Article 1 -->
+        <div class="col-span-12 md:col-span-4 mb-16 blog-item" data-category="typography">
+          <a href="#" class="block">
+            <div class="aspect-[4/3] bg-gray-100 mb-6 overflow-hidden">
+              <img src="https://placehold.co/600x450/E5E7EB/000000" alt="Typography in Digital Spaces" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+          </a>
+          <span class="text-red-600 uppercase text-sm tracking-wider">Typography</span>
+          <h3 class="text-2xl font-bold uppercase mb-2 mt-2">
+            <a href="#" class="hover:text-red-600 transition-colors">Typography in Digital Spaces</a>
+          </h3>
+          <p class="text-gray-600 mb-4">April 28, 2025 • 6 min read</p>
+          <p class="text-lg leading-relaxed">
+            How the principles of Swiss typography can be applied to create more readable and accessible digital interfaces.
+          </p>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="col-span-12 md:col-span-4 mb-16 blog-item" data-category="grid">
+          <a href="#" class="block">
+            <div class="aspect-[4/3] bg-gray-100 mb-6 overflow-hidden">
+              <img src="https://placehold.co/600x450/1A1A1A/FFFFFF" alt="The Mathematical Grid" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+          </a>
+          <span class="text-red-600 uppercase text-sm tracking-wider">Grid Systems</span>
+          <h3 class="text-2xl font-bold uppercase mb-2 mt-2">
+            <a href="#" class="hover:text-red-600 transition-colors">The Mathematical Grid</a>
+          </h3>
+          <p class="text-gray-600 mb-4">April 15, 2025 • 5 min read</p>
+          <p class="text-lg leading-relaxed">
+            Exploring the mathematical principles behind effective grid systems and how they create harmony in design.
+          </p>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="col-span-12 md:col-span-4 mb-16 blog-item" data-category="interviews">
+          <a href="#" class="block">
+            <div class="aspect-[4/3] bg-gray-100 mb-6 overflow-hidden">
+              <img src="https://placehold.co/600x450/D1D5DB/000000" alt="In Conversation with Massimo Vignelli" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+          </a>
+          <span class="text-red-600 uppercase text-sm tracking-wider">Interviews</span>
+          <h3 class="text-2xl font-bold uppercase mb-2 mt-2">
+            <a href="#" class="hover:text-red-600 transition-colors">In Conversation with Massimo Vignelli</a>
+          </h3>
+          <p class="text-gray-600 mb-4">March 30, 2025 • 12 min read</p>
+          <p class="text-lg leading-relaxed">
+            A retrospective interview with one of the most influential designers of the 20th century on his approach to systematic design.
+          </p>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="col-span-12 md:col-span-6 mb-16 blog-item" data-category="design">
+          <a href="#" class="block">
+            <div class="aspect-video bg-gray-100 mb-6 overflow-hidden">
+              <img src="https://placehold.co/800x450/DC2626/FFFFFF" alt="Objectivity in Design" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+          </a>
+          <span class="text-red-600 uppercase text-sm tracking-wider">Design Theory</span>
+          <h3 class="text-2xl font-bold uppercase mb-2 mt-2">
+            <a href="#" class="hover:text-red-600 transition-colors">Objectivity in Design</a>
+          </h3>
+          <p class="text-gray-600 mb-4">March 15, 2025 • 7 min read</p>
+          <p class="text-lg leading-relaxed">
+            How the Swiss approach to objective design can help create more universal and accessible visual communication in a subjective world.
+          </p>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="col-span-12 md:col-span-6 mb-16 blog-item" data-category="typography">
+          <a href="#" class="block">
+            <div class="aspect-video bg-gray-100 mb-6 overflow-hidden">
+              <img src="https://placehold.co/800x450/4B5563/FFFFFF" alt="Helvetica: The Ubiquitous Typeface" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+          </a>
+          <span class="text-red-600 uppercase text-sm tracking-wider">Typography</span>
+          <h3 class="text-2xl font-bold uppercase mb-2 mt-2">
+            <a href="#" class="hover:text-red-600 transition-colors">Helvetica: The Ubiquitous Typeface</a>
+          </h3>
+          <p class="text-gray-600 mb-4">February 28, 2025 • 9 min read</p>
+          <p class="text-lg leading-relaxed">
+            An exploration of how Helvetica became the defining typeface of Swiss Design and why it continues to dominate visual culture.
+          </p>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="col-span-12 md:col-span-4 mb-16 blog-item" data-category="grid">
+          <a href="#" class="block">
+            <div class="aspect-[4/3] bg-gray-100 mb-6 overflow-hidden">
+              <img src="https://placehold.co/600x450/000000/FFFFFF" alt="Responsive Grid Systems" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+          </a>
+          <span class="text-red-600 uppercase text-sm tracking-wider">Grid Systems</span>
+          <h3 class="text-2xl font-bold uppercase mb-2 mt-2">
+            <a href="#" class="hover:text-red-600 transition-colors">Responsive Grid Systems</a>
+          </h3>
+          <p class="text-gray-600 mb-4">February 15, 2025 • 6 min read</p>
+          <p class="text-lg leading-relaxed">
+            How traditional Swiss grid systems have evolved to accommodate the fluid nature of digital design across multiple devices.
+          </p>
+        </div>
+
+        <!-- Article 7 -->
+        <div class="col-span-12 md:col-span-4 mb-16 blog-item" data-category="design">
+          <a href="#" class="block">
+            <div class="aspect-[4/3] bg-gray-100 mb-6 overflow-hidden">
+              <img src="https://placehold.co/600x450/FFFFFF/000000" alt="Minimalism vs. Clarity" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+          </a>
+          <span class="text-red-600 uppercase text-sm tracking-wider">Design Theory</span>
+          <h3 class="text-2xl font-bold uppercase mb-2 mt-2">
+            <a href="#" class="hover:text-red-600 transition-colors">Minimalism vs. Clarity</a>
+          </h3>
+          <p class="text-gray-600 mb-4">January 30, 2025 • 8 min read</p>
+          <p class="text-lg leading-relaxed">
+            Distinguishing between minimalism as an aesthetic choice and clarity as a functional necessity in effective design.
+          </p>
+        </div>
+
+        <!-- Article 8 -->
+        <div class="col-span-12 md:col-span-4 mb-16 blog-item" data-category="interviews">
+          <a href="#" class="block">
+            <div class="aspect-[4/3] bg-gray-100 mb-6 overflow-hidden">
+              <img src="https://placehold.co/600x450/E5E7EB/000000" alt="The Next Generation of Swiss Design" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+          </a>
+          <span class="text-red-600 uppercase text-sm tracking-wider">Interviews</span>
+          <h3 class="text-2xl font-bold uppercase mb-2 mt-2">
+            <a href="#" class="hover:text-red-600 transition-colors">The Next Generation of Swiss Design</a>
+          </h3>
+          <p class="text-gray-600 mb-4">January 15, 2025 • 10 min read</p>
+          <p class="text-lg leading-relaxed">
+            Interviews with emerging designers who are carrying forward the principles of Swiss Design while adapting them for contemporary contexts.
+          </p>
+        </div>
+      </section>
+
+      {{> newsletter-signup}}
+    </main>
+
+    {{> footer}}
+
+    <script type="module" src="/ideas.js"></script>
+    {{> mobile-menu-script}}
+  </body>
+</html>

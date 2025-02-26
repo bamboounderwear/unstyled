@@ -1,0 +1,26 @@
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 bg-white z-50 border-b border-gray-200">
+  <div class="px-8 py-6">
+    <div class="flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold uppercase tracking-wider">Brockmann</a>
+      <div class="hidden md:flex space-x-8">
+        <a href="work.html" class="{{#if activeWork}}text-red-600{{else}}hover:text-red-600{{/if}} transition-colors uppercase text-sm tracking-wider">Work</a>
+        <a href="about.html" class="{{#if activeAbout}}text-red-600{{else}}hover:text-red-600{{/if}} transition-colors uppercase text-sm tracking-wider">About</a>
+        <a href="ideas.html" class="{{#if activeIdeas}}text-red-600{{else}}hover:text-red-600{{/if}} transition-colors uppercase text-sm tracking-wider">Ideas</a>
+        <a href="contact.html" class="{{#if activeContact}}text-red-600{{else}}hover:text-red-600{{/if}} transition-colors uppercase text-sm tracking-wider">Contact</a>
+      </div>
+      <button id="mobile-menu-button" class="md:hidden">
+        <div class="w-6 h-0.5 bg-black mb-1.5"></div>
+        <div class="w-6 h-0.5 bg-black mb-1.5"></div>
+        <div class="w-6 h-0.5 bg-black"></div>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+      <a href="work.html" class="block py-2 {{#if activeWork}}text-red-600{{else}}hover:text-red-600{{/if}} transition-colors uppercase text-sm tracking-wider">Work</a>
+      <a href="about.html" class="block py-2 {{#if activeAbout}}text-red-600{{else}}hover:text-red-600{{/if}} transition-colors uppercase text-sm tracking-wider">About</a>
+      <a href="ideas.html" class="block py-2 {{#if activeIdeas}}text-red-600{{else}}hover:text-red-600{{/if}} transition-colors uppercase text-sm tracking-wider">Ideas</a>
+      <a href="contact.html" class="block py-2 {{#if activeContact}}text-red-600{{else}}hover:text-red-600{{/if}} transition-colors uppercase text-sm tracking-wider">Contact</a>
+    </div>
+  </div>
+</nav>

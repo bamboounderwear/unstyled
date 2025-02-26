@@ -12,3 +12,73 @@
 #mobile-menu-button div {
   transition: all 0.3s ease;
 }
+
+/* Button styles */
+.filter-btn {
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.filter-btn.active {
+  background-color: black;
+  color: white;
+}
+
+/* Project image hover effect */
+.project-image {
+  transition: transform 0.5s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+/* Team member image hover effect */
+.team-member img {
+  transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+  transform: scale(1.05);
+}
+
+/* Blog post styles */
+.prose {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prose h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+.prose h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+}
+
+.prose img {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Timeline animation */
+.border-l-2.border-black {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}

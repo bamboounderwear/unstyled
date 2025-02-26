@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head pageTitle="About"}}
+  </head>
+  <body class="bg-white text-black font-helvetica">
+    {{> header activeAbout=true}}
+
+    <main class="min-h-screen p-8 pt-28">
+      <!-- Header Section -->
+      <header class="grid-area mb-16 mt-32">
+        <div class="col-span-12 md:col-span-8">
+          <h1 class="text-6xl font-bold uppercase tracking-tight">About Our Studio</h1>
+        </div>
+      </header>
+
+      <!-- Introduction Section -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12 md:col-span-5">
+          <img src="https://placehold.co/600x600/000000/FFFFFF" alt="Studio image" class="w-full aspect-square object-cover">
+        </div>
+        <div class="col-span-12 md:col-span-6 md:col-start-7">
+          <h2 class="text-4xl font-bold mb-8 uppercase">Our Philosophy</h2>
+          <p class="text-xl leading-relaxed mb-6">
+            Founded in 2020, our studio embraces the principles of Swiss Design, creating work that prioritizes clarity, precision, and objective presentation.
+          </p>
+          <p class="text-xl leading-relaxed">
+            We believe that good design is as little design as possible. Our approach focuses on mathematical grid systems, typography, and the strategic use of white space to create meaningful visual communication.
+          </p>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12">
+          <h2 class="text-5xl font-bold mb-16 uppercase">Our Team</h2>
+        </div>
+        
+        <!-- Team Member 1 -->
+        <div class="col-span-12 md:col-span-4 mb-12 md:mb-0 team-member">
+          <img src="https://placehold.co/400x400/E5E7EB/000000" alt="Emma Müller" class="w-full aspect-square object-cover mb-6">
+          <h3 class="text-2xl font-bold uppercase">Emma Müller</h3>
+          <p class="text-lg text-gray-600 mb-4">Creative Director</p>
+          <p class="text-lg leading-relaxed">
+            With over 15 years of experience in design, Emma leads our creative vision with precision and clarity.
+          </p>
+        </div>
+        
+        <!-- Team Member 2 -->
+        <div class="col-span-12 md:col-span-4 mb-12 md:mb-0 team-member">
+          <img src="https://placehold.co/400x400/D1D5DB/000000" alt="Thomas Weber" class="w-full aspect-square object-cover mb-6">
+          <h3 class="text-2xl font-bold uppercase">Thomas Weber</h3>
+          <p class="text-lg text-gray-600 mb-4">Design Lead</p>
+          <p class="text-lg leading-relaxed">
+            Thomas specializes in typography and grid systems, bringing mathematical precision to every project.
+          </p>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="col-span-12 md:col-span-4 team-member">
+          <img src="https://placehold.co/400x400/9CA3AF/FFFFFF" alt="Sofia Keller" class="w-full aspect-square object-cover mb-6">
+          <h3 class="text-2xl font-bold uppercase">Sofia Keller</h3>
+          <p class="text-lg text-gray-600 mb-4">Art Director</p>
+          <p class="text-lg leading-relaxed">
+            Sofia's background in fine arts brings a unique perspective to our structured design approach.
+          </p>
+        </div>
+      </section>
+
+      <!-- Timeline Section -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12 md:col-span-4">
+          <h2 class="text-4xl font-bold mb-8 uppercase sticky top-28">Our Journey</h2>
+        </div>
+        <div class="col-span-12 md:col-span-8 space-y-16">
+          <!-- Timeline Item 1 -->
+          <div class="border-l-2 border-black pl-8 relative">
+            <div class="absolute w-3 h-3 bg-red-600 rounded-full -left-[7px]"></div>
+            <h3 class="text-2xl font-bold uppercase mb-4">2020</h3>
+            <p class="text-lg leading-relaxed">
+              Studio founded with a commitment to Swiss Design principles and a focus on digital applications of grid systems.
+            </p>
+          </div>
+          
+          <!-- Timeline Item 2 -->
+          <div class="border-l-2 border-black pl-8 relative">
+            <div class="absolute w-3 h-3 bg-red-600 rounded-full -left-[7px]"></div>
+            <h3 class="text-2xl font-bold uppercase mb-4">2021</h3>
+            <p class="text-lg leading-relaxed">
+              Expanded our team and client base, working with international brands to create cohesive visual systems.
+            </p>
+          </div>
+          
+          <!-- Timeline Item 3 -->
+          <div class="border-l-2 border-black pl-8 relative">
+            <div class="absolute w-3 h-3 bg-red-600 rounded-full -left-[7px]"></div>
+            <h3 class="text-2xl font-bold uppercase mb-4">2023</h3>
+            <p class="text-lg leading-relaxed">
+              Launched our educational workshop series, teaching the principles of Swiss Design to the next generation of designers.
+            </p>
+          </div>
+          
+          <!-- Timeline Item 4 -->
+          <div class="border-l-2 border-black pl-8 relative">
+            <div class="absolute w-3 h-3 bg-red-600 rounded-full -left-[7px]"></div>
+            <h3 class="text-2xl font-bold uppercase mb-4">2025</h3>
+            <p class="text-lg leading-relaxed">
+              Celebrating five years of design excellence with a retrospective exhibition and the publication of our first design manual.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Values Section with Offset -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12 md:col-start-3 md:col-span-8">
+          <h2 class="text-5xl font-bold mb-12 uppercase text-center">Our Values</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <div class="w-16 h-16 bg-red-600 mb-6"></div>
+              <h3 class="text-2xl font-bold mb-4 uppercase">Clarity</h3>
+              <p class="text-lg leading-relaxed">
+                We believe in clear communication through design, removing unnecessary elements to focus on what matters.
+              </p>
+            </div>
+            <div>
+              <div class="w-16 h-16 bg-black mb-6"></div>
+              <h3 class="text-2xl font-bold mb-4 uppercase">Precision</h3>
+              <p class="text-lg leading-relaxed">
+                Every element is placed with purpose, using mathematical principles to create harmonious compositions.
+              </p>
+            </div>
+            <div>
+              <div class="w-16 h-16 bg-gray-700 mb-6"></div>
+              <h3 class="text-2xl font-bold mb-4 uppercase">Objectivity</h3>
+              <p class="text-lg leading-relaxed">
+                Our designs present information in an objective manner, allowing content to speak for itself.
+              </p>
+            </div>
+            <div>
+              <div class="w-16 h-16 bg-gray-400 mb-6"></div>
+              <h3 class="text-2xl font-bold mb-4 uppercase">Innovation</h3>
+              <p class="text-lg leading-relaxed">
+                While rooted in tradition, we constantly explore new applications of Swiss Design principles in contemporary contexts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quote Section -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12 md:col-start-2 md:col-span-10 lg:col-start-3 lg:col-span-8">
+          <blockquote class="border-l-4 border-red-600 pl-8 py-2">
+            <p class="text-3xl font-light italic mb-6">
+              "Design is not just what it looks like and feels like. Design is how it works."
+            </p>
+            <cite class="text-xl font-bold">— Josef Müller-Brockmann</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12 md:col-span-6 md:col-start-4 text-center">
+          <h2 class="text-4xl font-bold mb-8 uppercase">Work With Us</h2>
+          <p class="text-xl leading-relaxed mb-8">
+            Interested in collaborating? We're always looking for new challenges and opportunities to create meaningful design.
+          </p>
+          <a href="#" class="inline-block bg-black text-white px-8 py-4 uppercase tracking-wider hover:bg-red-600 transition-colors">
+            Get In Touch
+          </a>
+        </div>
+      </section>
+    </main>
+
+    {{> footer}}
+
+    <script type="module" src="/about.js"></script>
+    {{> mobile-menu-script}}
+  </body>
+</html>

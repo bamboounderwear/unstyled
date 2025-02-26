@@ -1,38 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brockmann Inspired</title>
-    <link rel="stylesheet" href="/style.css">
+    {{> head pageTitle="Home"}}
   </head>
   <body class="bg-white text-black font-helvetica">
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 bg-white z-50 border-b border-gray-200">
-      <div class="px-8 py-6">
-        <div class="flex justify-between items-center">
-          <a href="#" class="text-xl font-bold uppercase tracking-wider">Brockmann</a>
-          <div class="hidden md:flex space-x-8">
-            <a href="#" class="hover:text-red-600 transition-colors uppercase text-sm tracking-wider">Work</a>
-            <a href="#" class="hover:text-red-600 transition-colors uppercase text-sm tracking-wider">About</a>
-            <a href="#" class="hover:text-red-600 transition-colors uppercase text-sm tracking-wider">Grid</a>
-            <a href="#" class="hover:text-red-600 transition-colors uppercase text-sm tracking-wider">Contact</a>
-          </div>
-          <button id="mobile-menu-button" class="md:hidden">
-            <div class="w-6 h-0.5 bg-black mb-1.5"></div>
-            <div class="w-6 h-0.5 bg-black mb-1.5"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
-          </button>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
-          <a href="#" class="block py-2 hover:text-red-600 transition-colors uppercase text-sm tracking-wider">Work</a>
-          <a href="#" class="block py-2 hover:text-red-600 transition-colors uppercase text-sm tracking-wider">About</a>
-          <a href="#" class="block py-2 hover:text-red-600 transition-colors uppercase text-sm tracking-wider">Grid</a>
-          <a href="#" class="block py-2 hover:text-red-600 transition-colors uppercase text-sm tracking-wider">Contact</a>
-        </div>
-      </div>
-    </nav>
+    {{> header}}
 
     <main class="min-h-screen p-8 pt-28">
       <!-- Header Section -->
@@ -45,7 +17,7 @@
       <!-- Main Content Grid -->
       <section class="grid-area mb-32">
         <div class="col-span-12 md:col-span-4">
-          <div class="aspect-square bg-black"></div>
+          <img src="https://placehold.co/600x600/000000/FFFFFF" alt="Black square" class="w-full aspect-square object-cover">
         </div>
         <div class="col-span-12 md:col-span-4">
           <p class="text-xl leading-relaxed">
@@ -53,7 +25,7 @@
           </p>
         </div>
         <div class="col-span-12 md:col-span-4">
-          <div class="aspect-square bg-red-600"></div>
+          <img src="https://placehold.co/600x600/DC2626/FFFFFF" alt="Red square" class="w-full aspect-square object-cover">
         </div>
       </section>
 
@@ -70,7 +42,7 @@
       <!-- Asymmetric Grid Section -->
       <section class="grid-area mb-32">
         <div class="col-span-12 md:col-span-7">
-          <div class="aspect-video bg-gray-900"></div>
+          <img src="https://placehold.co/1200x675/1A1A1A/FFFFFF" alt="Dark rectangle" class="w-full aspect-video object-cover">
         </div>
         <div class="col-span-12 md:col-span-4 md:col-start-9">
           <h3 class="text-2xl font-bold mb-6 uppercase">Visual Hierarchy</h3>
@@ -91,9 +63,9 @@
           </div>
         </div>
         <div class="col-span-12 md:col-span-6 md:col-start-7 space-y-8">
-          <div class="aspect-square bg-red-600"></div>
-          <div class="aspect-square bg-black"></div>
-          <div class="aspect-square bg-gray-700"></div>
+          <img src="https://placehold.co/600x600/DC2626/FFFFFF" alt="Red square" class="w-full aspect-square object-cover">
+          <img src="https://placehold.co/600x600/000000/FFFFFF" alt="Black square" class="w-full aspect-square object-cover">
+          <img src="https://placehold.co/600x600/4B5563/FFFFFF" alt="Gray square" class="w-full aspect-square object-cover">
         </div>
       </section>
 
@@ -127,47 +99,18 @@
         </div>
         <div class="col-span-12 md:col-span-6">
           <div class="grid grid-cols-2 gap-4">
-            <div class="aspect-square bg-gray-900"></div>
-            <div class="aspect-square bg-gray-700"></div>
-            <div class="aspect-square bg-gray-500"></div>
-            <div class="aspect-square bg-gray-300"></div>
+            <img src="https://placehold.co/300x300/1A1A1A/FFFFFF" alt="Dark gray square" class="w-full aspect-square object-cover">
+            <img src="https://placehold.co/300x300/374151/FFFFFF" alt="Medium gray square" class="w-full aspect-square object-cover">
+            <img src="https://placehold.co/300x300/6B7280/FFFFFF" alt="Light gray square" class="w-full aspect-square object-cover">
+            <img src="https://placehold.co/300x300/D1D5DB/000000" alt="Very light gray square" class="w-full aspect-square object-cover">
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-white text-black border-t border-gray-200">
-      <div class="px-8 py-16">
-        <div class="grid-area">
-          <div class="col-span-12 md:col-span-4">
-            <h3 class="text-2xl font-bold uppercase tracking-wider mb-6">Brockmann</h3>
-            <p class="text-gray-600">Inspired by the principles of Swiss Design and the work of Josef Müller-Brockmann.</p>
-          </div>
-          <div class="col-span-12 md:col-span-4">
-            <h4 class="uppercase text-sm tracking-wider mb-4">Navigation</h4>
-            <ul class="space-y-2">
-              <li><a href="#" class="text-gray-600 hover:text-red-600 transition-colors">Work</a></li>
-              <li><a href="#" class="text-gray-600 hover:text-red-600 transition-colors">About</a></li>
-              <li><a href="#" class="text-gray-600 hover:text-red-600 transition-colors">Grid</a></li>
-              <li><a href="#" class="text-gray-600 hover:text-red-600 transition-colors">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-span-12 md:col-span-4">
-            <h4 class="uppercase text-sm tracking-wider mb-4">Contact</h4>
-            <address class="text-gray-600 not-italic">
-              Email: <a href="mailto:hello@brockmann.com" class="hover:text-red-600 transition-colors">hello@brockmann.com</a><br>
-              Phone: +1 (555) 123-4567<br>
-              Location: Zurich, Switzerland
-            </address>
-          </div>
-        </div>
-        <div class="mt-16 pt-8 border-t border-gray-200">
-          <p class="text-gray-600 text-sm">&copy; 2025 Brockmann. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
+    {{> footer}}
 
     <script type="module" src="/main.js"></script>
+    {{> mobile-menu-script}}
   </body>
 </html>

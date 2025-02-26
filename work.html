@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head pageTitle="Work"}}
+  </head>
+  <body class="bg-white text-black font-helvetica">
+    {{> header activeWork=true}}
+
+    <main class="min-h-screen p-8 pt-28">
+      <!-- Header Section -->
+      <header class="grid-area mb-16 mt-32">
+        <div class="col-span-12 md:col-span-8">
+          <h1 class="text-6xl font-bold uppercase tracking-tight">Selected Works</h1>
+        </div>
+      </header>
+
+      <!-- Filter Controls -->
+      <section class="grid-area mb-16">
+        <div class="col-span-12">
+          <div class="flex flex-wrap gap-4">
+            <button class="filter-btn active px-4 py-2 border border-black hover:bg-black hover:text-white transition-colors bg-black text-white" data-filter="all">All</button>
+            <button class="filter-btn px-4 py-2 border border-black hover:bg-black hover:text-white transition-colors" data-filter="print">Print</button>
+            <button class="filter-btn px-4 py-2 border border-black hover:bg-black hover:text-white transition-colors" data-filter="digital">Digital</button>
+            <button class="filter-btn px-4 py-2 border border-black hover:bg-black hover:text-white transition-colors" data-filter="identity">Identity</button>
+            <button class="filter-btn px-4 py-2 border border-black hover:bg-black hover:text-white transition-colors" data-filter="exhibition">Exhibition</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Grid -->
+      <section class="grid-area mb-32">
+        <!-- Project 1 -->
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 mb-16 project-item" data-category="print">
+          <div class="aspect-[4/5] bg-gray-100 mb-4 project-image overflow-hidden">
+            <img src="https://placehold.co/480x600/1A1A1A/DC2626" alt="Geometric Poster Series" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-2xl font-bold uppercase mb-2">Geometric Poster Series</h3>
+          <p class="text-gray-600 mb-2">Print / 2024</p>
+          <p class="text-lg leading-relaxed">
+            A series of posters exploring mathematical proportions and geometric forms.
+          </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 mb-16 project-item" data-category="digital">
+          <div class="aspect-[4/5] bg-gray-100 mb-4 project-image overflow-hidden">
+            <img src="https://placehold.co/480x600/374151/FFFFFF" alt="Modular Web Platform" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-2xl font-bold uppercase mb-2">Modular Web Platform</h3>
+          <p class="text-gray-600 mb-2">Digital / 2023</p>
+          <p class="text-lg leading-relaxed">
+            A responsive website built on a strict grid system with modular components.
+          </p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 mb-16 project-item" data-category="identity">
+          <div class="aspect-[4/5] bg-gray-100 mb-4 project-image overflow-hidden">
+            <img src="https://placehold.co/480x600/FFFFFF/000000" alt="Monochrome Brand Identity" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-2xl font-bold uppercase mb-2">Monochrome Brand Identity</h3>
+          <p class="text-gray-600 mb-2">Identity / 2023</p>
+          <p class="text-lg leading-relaxed">
+            A minimalist identity system for a contemporary art gallery.
+          </p>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-span-12 md:col-span-6 lg:col-span-8 mb-16 project-item" data-category="exhibition">
+          <div class="aspect-video bg-gray-100 mb-4 project-image overflow-hidden">
+            <img src="https://placehold.co/1200x675/E5E7EB/000000" alt="Typography Exhibition" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-2xl font-bold uppercase mb-2">Typography Exhibition</h3>
+          <p class="text-gray-600 mb-2">Exhibition / 2024</p>
+          <p class="text-lg leading-relaxed">
+            An immersive exhibition exploring the evolution of Swiss typography from the 1950s to present day.
+          </p>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 mb-16 project-item" data-category="print">
+          <div class="aspect-[4/5] bg-gray-100 mb-4 project-image overflow-hidden">
+            <img src="https://placehold.co/480x600/DC2626/FFFFFF" alt="Annual Report Design" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-2xl font-bold uppercase mb-2">Annual Report Design</h3>
+          <p class="text-gray-600 mb-2">Print / 2023</p>
+          <p class="text-lg leading-relaxed">
+            A data-driven annual report using grid systems to organize complex information.
+          </p>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 mb-16 project-item" data-category="digital">
+          <div class="aspect-[4/5] bg-gray-100 mb-4 project-image overflow-hidden">
+            <img src="https://placehold.co/480x600/D1D5DB/000000" alt="Typographic App Interface" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-2xl font-bold uppercase mb-2">Typographic App Interface</h3>
+          <p class="text-gray-600 mb-2">Digital / 2024</p>
+          <p class="text-lg leading-relaxed">
+            A mobile application with a focus on typographic hierarchy and user experience.
+          </p>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 mb-16 project-item" data-category="identity">
+          <div class="aspect-[4/5] bg-gray-100 mb-4 project-image overflow-hidden">
+            <img src="https://placehold.co/480x600/000000/FFFFFF" alt="Architectural Identity" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-2xl font-bold uppercase mb-2">Architectural Identity</h3>
+          <p class="text-gray-600 mb-2">Identity / 2023</p>
+          <p class="text-lg leading-relaxed">
+            A comprehensive brand system for a modern architecture firm.
+          </p>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="col-span-12 md:col-span-6 lg:col-span-8 mb-16 project-item" data-category="exhibition">
+          <div class="aspect-video bg-gray-100 mb-4 project-image overflow-hidden">
+            <img src="https://placehold.co/1200x675/4B5563/FFFFFF" alt="Grid System Installation" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-2xl font-bold uppercase mb-2">Grid System Installation</h3>
+          <p class="text-gray-600 mb-2">Exhibition / 2024</p>
+          <p class="text-lg leading-relaxed">
+            An interactive installation exploring the principles of grid systems in three-dimensional space.
+          </p>
+        </div>
+      </section>
+
+      <!-- Case Study Highlight -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12">
+          <h2 class="text-5xl font-bold mb-16 uppercase">Featured Case Study</h2>
+        </div>
+        
+        <div class="col-span-12 md:col-span-8">
+          <img src="https://placehold.co/1200x675/1A1A1A/FFFFFF" alt="Museum Identity System" class="w-full aspect-video object-cover mb-8">
+        </div>
+        
+        <div class="col-span-12 md:col-span-4">
+          <h3 class="text-3xl font-bold uppercase mb-4">Museum Identity System</h3>
+          <p class="text-gray-600 mb-6">Identity / Exhibition / 2024</p>
+          <p class="text-lg leading-relaxed mb-8">
+            A comprehensive visual system for a contemporary art museum, including signage, print materials, digital platforms, and exhibition design.
+          </p>
+          <a href="project.html" class="inline-block bg-black text-white px-6 py-3 uppercase tracking-wider hover:bg-red-600 transition-colors">
+            View Case Study
+          </a>
+        </div>
+      </section>
+
+      <!-- Process Section -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12 md:col-span-5">
+          <div class="sticky top-28">
+            <h2 class="text-4xl font-bold mb-8 uppercase">Our Process</h2>
+            <p class="text-xl leading-relaxed">
+              Every project begins with research and a deep understanding of the problem space. We apply systematic thinking and grid-based design principles to create solutions that are both functional and visually compelling.
+            </p>
+          </div>
+        </div>
+        
+        <div class="col-span-12 md:col-span-6 md:col-start-7 space-y-16">
+          <!-- Process Step 1 -->
+          <div>
+            <div class="w-16 h-16 bg-black mb-6 flex items-center justify-center">
+              <span class="text-white text-2xl font-bold">01</span>
+            </div>
+            <h3 class="text-2xl font-bold uppercase mb-4">Research</h3>
+            <p class="text-lg leading-relaxed">
+              We begin by understanding the context, audience, and objectives of each project through rigorous research.
+            </p>
+          </div>
+          
+          <!-- Process Step 2 -->
+          <div>
+            <div class="w-16 h-16 bg-black mb-6 flex items-center justify-center">
+              <span class="text-white text-2xl font-bold">02</span>
+            </div>
+            <h3 class="text-2xl font-bold uppercase mb-4">Grid Development</h3>
+            <p class="text-lg leading-relaxed">
+              We establish a mathematical grid system that will serve as the foundation for all design decisions.
+            </p>
+          </div>
+          
+          <!-- Process Step 3 -->
+          <div>
+            <div class="w-16 h-16 bg-black mb-6 flex items-center justify-center">
+              <span class="text-white text-2xl font-bold">03</span>
+            </div>
+            <h3 class="text-2xl font-bold uppercase mb-4">Typography</h3>
+            <p class="text-lg leading-relaxed">
+              We select and implement a typographic system that enhances readability and creates clear hierarchy.
+            </p>
+          </div>
+          
+          <!-- Process Step 4 -->
+          <div>
+            <div class="w-16 h-16 bg-black mb-6 flex items-center justify-center">
+              <span class="text-white text-2xl font-bold">04</span>
+            </div>
+            <h3 class="text-2xl font-bold uppercase mb-4">Refinement</h3>
+            <p class="text-lg leading-relaxed">
+              We iterate and refine the design, ensuring every element serves a purpose and contributes to the overall objective.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="grid-area mb-32">
+        <div class="col-span-12 md:col-span-6 md:col-start-4 text-center">
+          <h2 class="text-4xl font-bold mb-8 uppercase">Start a Project</h2>
+          <p class="text-xl leading-relaxed mb-8">
+            Interested in working together? We're always open to discussing new projects and creative challenges.
+          </p>
+          <a href="#" class="inline-block bg-black text-white px-8 py-4 uppercase tracking-wider hover:bg-red-600 transition-colors">
+            Get In Touch
+          </a>
+        </div>
+      </section>
+    </main>
+
+    {{> footer}}
+
+    <script type="module" src="/work.js"></script>
+    {{> mobile-menu-script}}
+  </body>
+</html>
