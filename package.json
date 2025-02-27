@@ -15,5 +15,8 @@
     "postcss": "^8.4.35",
     "vite-plugin-handlebars": "^1.6.0",
     "handlebars": "^4.7.8"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.0.17"
   }
 }

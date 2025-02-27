@@ -9,7 +9,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'helvetica': ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        'helvetica': ['Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        'brockmann': ['Brockmann', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },
